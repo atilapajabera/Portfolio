@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atila John — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>
+  // Applied before paint so the saved theme doesn't flash.
+  try {
+    var t = localStorage.getItem('theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<canvas id="cyberBg" aria-hidden="true"></canvas>
+
+<header>
+  <nav class="wrap">
+    <div class="logo"><span class="dot"></span>atila.dev</div>
+    <ul class="navlinks">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">projects</a></li>
+      <li><a href="#cert">certifications</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" id="themeToggle" aria-label="Switch theme">
+      <span class="moon" aria-hidden="true">☾</span>
+      <span class="sun" aria-hidden="true">☀</span>
+    </button>
+    <a href="#contact" class="btn-ghost" style="padding:10px 20px; font-size:12px;">Let's talk</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Available for new projects</span>
+        <h1>Hi, I'm<br><span>Atila John.</span></h1>
+        <div class="role">Software Developer, Data Entry, and Data Analyst</div>
+        <p class="lede">I design and build clean, reliable web applications — creating intuitive interfaces and dependable systems that work seamlessly behind the scenes.</p>
+        <div class="cta-row">
+          <a href="#work" class="btn-primary">View my work →</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-glow"></div>
+        <div class="portrait-card">
+          <img src="image/atila.png" alt="Portrait of Atila John">
+          <div class="portrait-tag">
+            <span>atila_john.exe</span>
+            <span class="status">● online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">01 · About</span>
+        <h2 class="section-title">A little about me</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>I'm <strong>Atila John</strong>, a versatile professional with experience in software development, data entry, and data analysis. I enjoy building fast, accessible, and maintainable web applications while working with data to keep it accurate, organized, and meaningful.</p>
+          <p>I value clean code, attention to detail, and simple solutions. I'm always learning new technologies and finding better ways to solve problems.</p>
+          <p>When I'm not at the keyboard, I'm usually learning something adjacent — a new framework, a systems concept, or just reading other people's clean code for ideas.</p>
+          <div class="skills">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">VBA</span>
+            <span class="skill-pill">AI Prompting</span>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+            <span class="title">profile.json</span>
+          </div>
+          <div class="terminal-body">
+<span class="k">const</span> developer = {<br>
+&nbsp;&nbsp;<span class="n">name</span>: <span class="s">'Atila John'</span>,<br>
+&nbsp;&nbsp;<span class="n">role</span>: <span class="s">'Data Entry, Data Anlyst & Software Developer'</span>,<br>
+&nbsp;&nbsp;<span class="n">focus</span>: [<span class="s">'front-end'</span>, <span class="s">'back-end'</span>],<br>
+&nbsp;&nbsp;<span class="n">stack</span>: [<span class="s">'JS'</span>, <span class="s">'React'</span>, <span class="s">'Node'</span>],<br>
+&nbsp;&nbsp;<span class="n">available</span>: <span class="k">true</span>, <span class="c">// open to work</span><br>
+};<br><br>
+<span class="c">// thanks for stopping by 👋</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">02 · Selected Work</span>
+        <h2 class="section-title">Recent projects</h2>
+      </div>
+      <div class="work-list">
+
+        <div class="work-card">
+          <div class="work-media"><span class="glyph">// project preview</span></div>
+          <div class="work-info">
+            <div class="work-num">Project 01</div>
+            <h3>Project Name One</h3>
+            <p>Short description of what this project does and the problem it solves. Swap this in for a real project — a dashboard, an app, a client site.</p>
+            <div class="work-stack"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <div class="work-links"><a href="#">↗ Live site</a><a href="#">↗ GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="work-card rev">
+          <div class="work-media"><span class="glyph">// project preview</span></div>
+          <div class="work-info">
+            <div class="work-num">Project 02</div>
+            <h3>Project Name Two</h3>
+            <p>Short description of what this project does and the problem it solves. Add real metrics or outcomes here if you have them.</p>
+            <div class="work-stack"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span></div>
+            <div class="work-links"><a href="#">↗ Live site</a><a href="#">↗ GitHub</a></div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-media"><img src="image/preview.jpg" alt="ZEV Invitation Preview"></div>
+          <div class="work-info">
+            <div class="work-num">Project 03</div>
+            <h3>ZEV INVITATION</h3>
+            <p>Short description of what this project does and the problem it solves. Even a personal or class project works well here.</p>
+            <div class="work-stack"><span>Html</span><span>Javascript</span><span>CSS</span></div>
+            <div class="work-links"><a href="https://arttilla.github.io/Zev-Invitation/">↗ Live site</a><a href="#">↗ GitHub</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="cert">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">03 · Certifications</span>
+        <h2 class="section-title">Courses and credentials</h2>
+      </div>
+      <div class="cert-list">
+
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">Cisco Networking Academy · JS Institute</div>
+            <h3>HTML Essentials</h3>
+            <p>Student-level credential covering semantic HTML, accessible page structure, forms and validation, tables and multimedia, and how HTML fits together with CSS and JavaScript.</p>
+            <div class="cert-meta">
+              <span>Statement of Achievement</span>
+              <span>Semantic HTML</span>
+              <span>Accessibility</span>
+              <span>Web Forms</span>
+            </div>
+          </div>
+          <div class="cert-date">Sep 2026</div>
+        </div>
+
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">DICT Cybersecurity Bureau · Region V — Bicol</div>
+            <h3>Data Privacy Awareness Webinar</h3>
+            <p>Cybersecurity Month 2023 regional webinar series, "Sama-Sama para sa Cyberseguridad." Certificate of Appreciation, Control No. 2023-CPWEB723.</p>
+            <div class="cert-meta">
+              <span>Certificate of Appreciation</span>
+              <span>Data Privacy</span>
+            </div>
+          </div>
+          <div class="cert-date">Oct 2023</div>
+        </div>
+
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">DICT Cybersecurity Bureau · Region V — Bicol</div>
+            <h3>Opportunities and Careers for Cybersecurity in the Philippines</h3>
+            <p>Cybersecurity Month 2023 regional webinar series, "Sama-Sama para sa Cyberseguridad." Certificate of Participation, Control No. 2023-CPWEB587.</p>
+            <div class="cert-meta">
+              <span>Certificate of Participation</span>
+              <span>Cybersecurity</span>
+            </div>
+          </div>
+          <div class="cert-date">Oct 2023</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">04 · Contact</span>
+        <h2 class="section-title">Let's work together</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Have a project in mind, or just want to say hi? My inbox is open — I try to reply within a day or two.</p>
+          <div class="contact-item">
+            <div class="ic">@</div>
+            <div><div class="label">Email</div><div class="value">atilapajabera08@gmail.com</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">#</div>
+            <div><div class="label">Phone</div><div class="value">+639206508985</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">◆</div>
+            <div><div class="label">Location</div><div class="value">St. Paul, Makati City</div></div>
+          </div>
+        </div>
+        <div class="form-card">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="you@email.com">
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea placeholder="How can I help?"></textarea>
+          </div>
+          <button class="submit-btn" type="button" onclick="alert('Connect this form to a service like Formspree or a backend to make it live.')">Send message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© 2026 Atila John. All rights reserved.</span>
+    <div class="socials">
+      <a href="https://github.com/atilapajabera">GitHub</a>
+      <a href="https://www.linkedin.com/in/ajyp">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved) root.setAttribute('data-theme', saved);
+
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme');
+      if (!current) {
+        current = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      var next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
+
+<script>
+  // Animated cyber / circuit-network background.
+  (function () {
+    var canvas = document.getElementById('cyberBg');
+    if (!canvas || !canvas.getContext) return;
+    var ctx = canvas.getContext('2d');
+
+    var reduced = false;
+    try { reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+
+    var w, h, dpr, nodes, raf, running = true;
+
+    function colors() {
+      var cs = getComputedStyle(document.documentElement);
+      return {
+        accent: (cs.getPropertyValue('--accent') || '#e0a13c').trim(),
+        signal: (cs.getPropertyValue('--signal') || '#5ed3a5').trim(),
+        line:   (cs.getPropertyValue('--text-faint') || '#6b7488').trim()
+      };
+    }
+
+    function initNodes() {
+      var count = Math.max(26, Math.min(85, Math.floor((w * h) / 24000)));
+      nodes = [];
+      for (var i = 0; i < count; i++) {
+        nodes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.26,
+          vy: (Math.random() - 0.5) * 0.26,
+          pulse: Math.random() * Math.PI * 2,
+          bright: Math.random() < 0.16
+        });
+      }
+    }
+
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth;
+      h = window.innerHeight;
+      canvas.width = Math.floor(w * dpr);
+      canvas.height = Math.floor(h * dpr);
+      canvas.style.width = w + 'px';
+      canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      initNodes();
+      drawFrame();
+    }
+
+    function drawFrame() {
+      var c = colors();
+      ctx.clearRect(0, 0, w, h);
+
+      var maxDist = Math.min(170, Math.max(95, w / 9));
+      for (var i = 0; i < nodes.length; i++) {
+        for (var j = i + 1; j < nodes.length; j++) {
+          var a = nodes[i], b = nodes[j];
+          var dx = a.x - b.x, dy = a.y - b.y;
+          var dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < maxDist) {
+            ctx.strokeStyle = c.line;
+            ctx.globalAlpha = (1 - dist / maxDist) * 0.35;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      for (var k = 0; k < nodes.length; k++) {
+        var n = nodes[k];
+        var glow = (Math.sin(n.pulse) + 1) / 2;
+        ctx.globalAlpha = 0.5 + glow * 0.5;
+        ctx.fillStyle = n.bright ? c.accent : c.signal;
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.bright ? 2.2 : 1.3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    function step() {
+      if (!running) return;
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0 || n.x > w) n.vx *= -1;
+        if (n.y < 0 || n.y > h) n.vy *= -1;
+        n.pulse += 0.02;
+      }
+      drawFrame();
+      raf = requestAnimationFrame(step);
+    }
+
+    window.addEventListener('resize', resize);
+
+    document.addEventListener('visibilitychange', function () {
+      running = !document.hidden && !reduced;
+      if (running) {
+        raf = requestAnimationFrame(step);
+      } else if (raf) {
+        cancelAnimationFrame(raf);
+      }
+    });
+
+    resize();
+
+    if (!reduced) {
+      raf = requestAnimationFrame(step);
+    }
+    // If reduced motion is preferred, drawFrame() from resize() already
+    // rendered a single static frame and the loop never starts.
+  })();
+</script>
+</body>
+</html>
